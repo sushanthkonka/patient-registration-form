@@ -1,103 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <title>
-        Patient Registration Form
-    </title>
-    
 <head>
-    <link rel="stylesheet" href="Patient.css">
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="patient-registration.css">
 </head>
 <body>
-    <form class ="container">
-        <h1>
-            Patient Registration Form
-        </h1>
-        <h3>
-            Thank you for applying to our practices. Please complete this patient registration form with your information, and a doctor will contact you shortly.
-        </h3>
+    <form class="container">
+        <h1>Patient Registration Form</h1>
+        <h3>Thank you for applying to our practices. Please complete this patient registration form with your information, and a doctor will contact you shortly.</h3>
+<hr>
+        <div class="PatientName form-row">
+            <label for="fname" class="PatientNamellb">Patient's Name:</label>
+            <input type="text" class="firstname" id="fname" name="first" placeholder="First Name">
+            <input type="text" class="lastname" id="lname" name="last" placeholder="Last Name">
+        </div>
 
-<div class = "PatientName" >  <label for = "fname" class ="left">Patient's Name:  </label> 
-<input type="text" class="no-border" id="fname" name="first" value="First">
-<input type="text" class="no-border" id="lname" name="last" value="Last"><br><br>
-</div>
-<div class = "Gender" ><label for = "Gender" class ="left">Gender </label> 
+        <div class="Gender form-row">
+            <label for="Gender" class="Genderllb">Gender</label>
+            <input type="radio" name="gender" id="male" value="male"><label for="Male">Male</label>
+            <input type="radio" name="gender" id="female" value="female"><label for="Female">Female</label>
+        </div>
 
-<input type="radio"  name="gender" id="male" value="male">
-  <label for="Male">Male</label>
-<input type="radio"  name="gender" id="female" value="female">
-  <label for="Female">Female</label>
-</div><br><br>
-<div class = "PatientPhone" ><label for = "Phone" class="left" >Phone </label> 
-<input type="tel" id="Phone" class="no-border" name="Phone">
-</div>
-<br><br>
-<div class = "PatientDOB" ><label for = "DOB" >Date Of Birth </label> 
-<input type="date" id="DOB" class="no-border" name="Date Of Birth">
-</div><br><br>
-<div class = "PatientMstatus" ><label for = "MStatus" >Marital Status </label> 
-<input type="radio" class="no-border" name="MStatus" id="Single" value="Single">
-<label for="Single">Single</label>
-<input type="radio" class="no-border" name="MStatus" id="Married" value="Married">
-<label for="Married">Married</label>
-<input type="radio" name="MStatus" id="Divorced" value="Divorced">
-<label for="Divorced">Divorced</label>
-<input type="radio" name="MStatus" id="Widow" value="Widow">
-<label for="Widow">Widow</label>
-</div><br><br>
+        <br><br>
 
-<div class = "PatientAddress" ><label for = "PAddress" >Patient's Address </label> 
-<input type="text" class="no-border" id="PAddress"  name="Street Address" value="Street Address"><br><br>
-<input type="text" class="no-border" id="PAddress"  name="City" value="City">
-<input type="text" class="no-border"id="PAddress"  name="State" value="State"> <br><br>
-<input type="text"  class="no-border"id="PAddress"  name="Zip" value = "Postal/Zip Code">
-<label for="country"><label for = "Country" ></label>Country:</label>
-<select id="country" name="country">
-  <option value="">Country</option>
-  <option value="us">United States</option>
-  <option value="ca">Canada</option>
-  <option value="uk">United Kingdom</option>
-  <option value="au">Australia</option>
-  <option value="in">India</option>
-  <option value="de">Germany</option>
-  <option value="fr">France</option>
-  <option value="jp">Japan</option>
-  <option value="cn">China</option>
-</select> <br> <br>
-</div>
-<div class = "PatientInsurence" ><label for="InsuranceName">Insurance Name</label>
-<input type="text" id="Iname" class="no-border" name="PatientInsurence"><br><br>
-</div>
+        <div class="PatientPhone form-row">
+            <label for="Phone" class="Phonellb">Phone</label>
+            <input type="tel" id="Phone" class="phonenumber" name="Phone" placeholder="# # #- # # # -# # # #">
+        </div>
 
-<div class="PatientMedicalHistory">
-    <label for="Past medical history">Past medical history:</label>
-    <input type="checkbox" id="Anemia" name="medical_history" value="Anemia">
-    <label for="Anemia"> Anemia</label><br>
-    <input type="checkbox" id="Asthma" name="medical_history" value="Asthma">
-    <label for="Asthma"> Asthma</label><br>
-    <input type="checkbox" id="Bronchitis" name="medical_history" value="Bronchitis">
-    <label for="Bronchitis"> Bronchitis</label><br>
-    <input type="checkbox" id="Chickenpox" name="medical_history" value="Chickenpox">
-    <label for="Chickenpox"> Chickenpox</label><br>
-    <input type="checkbox" id="Diabetes" name="medical_history" value="Diabetes">
-    <label for="Diabetes"> Diabetes</label><br>
-    <input type="checkbox" id="Pneumonia" name="medical_history" value="Pneumonia">
-    <label for="Pneumonia"> Pneumonia</label><br>
-    <input type="checkbox" id="Thyroid Disease" name="medical_history" value="Thyroid Disease">
-    <label for="Thyroid Disease"> Thyroid Disease</label><br>
-    <input type="checkbox" id="Ulcer" name="medical_history" value="Ulcer">
-    <label for="Ulcer"> Ulcer</label><br>
-    <input type="checkbox" id="Ulcer" name="medical_history" value="Ulcer">
-    <label for="Ulcer"> Ulcer</label><br>
-    <input type="checkbox" id="Other" name="medical_history" value="Other">
-    <label for="Other"> Other</label><br><br>
+        <br><br>
 
-</div>
+        <div class="PatientDOB form-row">
+            <label for="DOB" class="PatientDOBllb">Date Of Birth</label>
+            <input type="date" id="DOB" class="dateofbirth" name="Date Of Birth">
+        </div>
 
-<h1>Patient/Guardian Signature</h1>
-<p>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.</p>
+        <br><br>
 
+        <div class="PatientMstatus form-row">
+            <label for="MStatus" class="PatientMstatusllb">Marital Status</label>
+            <input type="radio" class="single_Status" name="MStatus" id="Single" value="Single"><label for="Single">Single</label>
+            <input type="radio" class="maried_status" name="MStatus" id="Married" value="Married"><label for="Married">Married</label>
+            <input type="radio"  class="divorced_status" name="MStatus" id="Divorced" value="Divorced"><label for="Divorced">Divorced</label>
+            <input type="radio"  class= "Widow_status" name="MStatus" id="Widow" value="Widow"><label for="Widow">Widow</label>
+        </div>
 
-<button type="button" class="button" onclick="alert('You are Succesfully REGISTERED')">REGISTER</button>
-</form>
+        <br><br>
+
+        <div class="PatientAddress form-row">
+            <label for="PAddress" class="PatientAddresslbl">Patient's Address </label>
+            <input type="text" class="street_address" id="PAddress" name="Street Address" placeholder="Street Address"><br><br>
+            <input type="text" class="city_address" id="PAddress" name="City" placeholder="City">
+            <input type="text" class="state_addresss" id="PAddress" name="State" placeholder="State"><br><br>
+            <input type="text" class="zip_address" id="PAddress" name="Zip" placeholder="Postal/Zip Code">
+            <label for="country">Country:</label>
+            <select id="country" class="Country_dropdown" name="country">
+                <option value="">Country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="in">India</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="jp">Japan</option>
+                <option value="cn">China</option>
+            </select>
+            <br><br>
+        </div>
+
+        <div class="PatientInsurence form-row">
+            <label for="InsuranceName" class="PatientInsurencellb">Insurance Name</label>
+            <input type="text" id="Iname" class="Insurance" name="PatientInsurence"><br><br>
+        </div>
+
+        <div class="PatientMedicalHistory form-row">
+            <label for="Past medical history" class="PatientMedicalHistoryllb">Past medical history:</label><br>
+            <input type="checkbox" id="Anemia" name="medical_history" value="Anemia"><label for="Anemia"> Anemia</label><br>
+            <input type="checkbox" id="Asthma" name="medical_history" value="Asthma"><label for="Asthma"> Asthma</label><br>
+            <input type="checkbox" id="Bronchitis" name="medical_history" value="Bronchitis"><label for="Bronchitis"> Bronchitis</label><br>
+            <input type="checkbox" id="Chickenpox" name="medical_history" value="Chickenpox"><label for="Chickenpox"> Chickenpox</label><br>
+            <input type="checkbox" id="Diabetes" name="medical_history" value="Diabetes"><label for="Diabetes"> Diabetes</label><br>
+            <input type="checkbox" id="Pneumonia" name="medical_history" value="Pneumonia"><label for="Pneumonia"> Pneumonia</label><br>
+            <input type="checkbox" id="Thyroid" name="medical_history" value="Thyroid Disease"><label for="Thyroid"> Thyroid Disease</label><br>
+            <input type="checkbox" id="Ulcer" name="medical_history" value="Ulcer"><label for="Ulcer"> Ulcer</label><br>
+            <input type="checkbox" id="Other" name="medical_history" value="Other"><label for="Other"> Other</label><br><br>
+        </div>
+
+        <h1>Patient/Guardian Signature</h1>
+        <p>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.</p>
+
+        <button type="button" class="button" onclick="alert('You are Successfully REGISTERED')">REGISTER</button>
+    </form>
 </body>
 </html>

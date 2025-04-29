@@ -1,111 +1,102 @@
 body {
-    background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287');
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  form{
-    background-color:aliceblue;
-    box-sizing: border-box;
-    font-family:"Inter", sans-serif;
-    display: flex;
-    flex-direction: column;
-    padding: 20;
-    width: 75%;
-    gap: 10px;
-   align-items: center;
-  }
-  .no-border {
-    border: none;
-    outline: none; 
-    font-size: 18px; /
-  }
-
-  .Gender  input[type='radio']{
-    box-sizing: border-box;
-    appearance: none;
-    background: white;
-    outline: 2px solid #333;
-    border: 3px solid white;
-    width: 16px;
-    height: 16px;
-  }
-
-  .Gender input[type='radio']:checked {
-    background: #0aa032;
-  }
-
-  .left{
-    text-align: left;
-  }
-  
-  
- #fname {
-           background-color: #efefe8;
-          
-        }
-#lname{
-           background-color: #efefe8;
-    }
-#male {
-        background-color:#efefe8;
-      }
-#female {
-    background-color: #efefe8;
-      }
-
-#Phone {
-            background-color: #efefe8;
-        }
-#DOB {
-        background-color: #efefe8;
-    }
- #Single {
-           background-color: #efefe8;
-        }
-#Married {
-             background-color: #efefe8;
-         }
-#Divorced{
-            background-color: #efefe8;
-        }
-#Widow{
-    background-color: #efefe8;
-      }
-
-#PAddress {
-        background-color: #efefe8;
-        }
-#Country {
-        background-color: #efefe8;
-        }
-#Iname {
-            background-color: #efefe8;
-        }
-
-#div {
-        display: block;
-        unicode-bidi: isolate;
+  background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287');
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+form {
+  background-color: aliceblue;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 75%;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.firstname,
+.lastname,
+.phonenumber,
+.dateofbirth,
+.Insurance,
+.street_address,
+.city_address,
+.state_addresss,
+.zip_address,
+.Country_dropdown
+{
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.Gender input[type='radio'] {
+  box-sizing: border-box;
+  appearance: none;
+  background: white;
+  outline: 2px solid #333;
+  border: 3px solid white;
+  width: 16px;
+  height: 16px;
+}
+
+
+#fname,
+#lname,
+#male,
+#female,
+#Phone,
+#DOB,
+#Single,
+#Married,
+#Divorced,
+#Widow,
+#PAddress,
+#Iname,
+#country {
+    color: #070606;
+    padding: 15px 15px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 6px !important;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: rgba(0, 0, 0, .15);
+    border-color: transparent;
+}
+  
+
 .button {
-    background-color: black;  
-    color: white;             
-    border: none;             
-    padding: 10px 20px;      
-    font-size: 16px;          
-    cursor: pointer;        
-    border-radius: 5px;       
-  }
-        
-       
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.PatientName,
+.Gender,
+.PatientPhone,
+.PatientDOB,
+.PatientMstatus,
+.PatientAddress,
+.PatientInsurence,
+.PatientMedicalHistory {
+    width: 100%;
+}
 
 
-    
 
 
 
-  
-  
-  
