@@ -17,6 +17,7 @@ form {
   width: 75%;
   gap: 10px;
   align-items: center;
+  display: inline-block;
 }
 
 
@@ -73,6 +74,26 @@ form {
     background-color: rgba(0, 0, 0, .15);
     border-color: transparent;
 }
+
+
+
+.PatientMedicalHistory {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.checkbox-item {
+  display: flex;
+  border: none;
+  
+}
+
+.PatientMedicalHistory input[type="checkbox"] {
+ 
+  accent-color: #030303; 
+}
+
   
 
 .button {
