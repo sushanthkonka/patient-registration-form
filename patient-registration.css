@@ -46,7 +46,6 @@ input[type='radio']:{
   width: 16px;
   height: 16px;
   cursor: pointer;
-  
 }
 
 input[type='radio']:checked{
@@ -66,8 +65,7 @@ input[type='radio']:checked{
 #Widow,
 #PAddress,
 #Iname,
-#country,
-#Anemia {
+#country {
     color: #070606;
     padding: 15px 15px;
     border-width: 1px !important;
@@ -80,33 +78,9 @@ input[type='radio']:checked{
     line-height: 1.2em;
     background-color: rgba(0, 0, 0, .15);
     border-color: transparent;
-    
-}
-
-
-
-.PatientMedicalHistory {
-  display: block;
-  position: relative;
-  padding-left: 45px;
-  margin-bottom: 12px;
-  cursor: pointer;
- 
-}
-
-.checkbox-item {
-  display: flex;
-  border: none;
-  
-}
-
-.PatientMedicalHistory input[type="checkbox"] {
- 
-  accent-color: #030303; 
 }
 
   
-
 .button {
   background-color: black;
   color: white;
@@ -115,25 +89,6 @@ input[type='radio']:checked{
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-}
-
-.PatientName,
-.Gender,
-.PatientPhone,
-.PatientDOB,
-.PatientMstatus,
-.PatientAddress,
-.PatientInsurence,
-.PatientMedicalHistory {
-    width: 100%;
-}
-
-.checkbox-item {
-  display: grid;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  
 }
 
 .form-row {
@@ -177,20 +132,20 @@ input[type='radio']:checked{
   text-align: left;
 }
 
-.input-group.check-box {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.input-group.check-box  {
+  
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
   padding: 6px;
-  text-align: left;
   width: 70%;
-  justify-content: flex-end;
-
+  text-align: left;
 }
 
 
-
-
+.PatientMedicalHistory input[type="checkbox"] {
+  accent-color: #030303; 
+}
 
 
 
