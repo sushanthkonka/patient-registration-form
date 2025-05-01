@@ -3,6 +3,8 @@
 <head>
     <title>Patient Registration Form</title>
     <link rel="stylesheet" href="patient-registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <form class="container">
@@ -11,10 +13,10 @@
        
       
         <div class="PatientName form-row">
-            <label for="fname" class="PatientNamellb">Patient's Name:</label>
+            <label for="fname" class="PatientNamellb" >Patient's Name*</label>
             <div class="input-group">
-            <input type="text" class="firstname" id="fname" name="first" placeholder="First Name">
-            <input type="text" class="lastname" id="lname" name="last" placeholder="Last Name">
+            <input type="text" class="firstname" id="fname" name="first" placeholder="First Name" >
+            <input type="text" class="lastname" id="lname" name="last" placeholder="Last Name" >
         </div>
         </div>
 
@@ -29,7 +31,7 @@
         <br><br>
 
         <div class="PatientPhone form-row">
-            <label for="Phone" class="Phonellb">Phone</label>
+            <label for="Phone" class="Phonellb">Phone*</label>
             <div class="input-group">
                  <input type="tel" id="Phone" class="phonenumber" name="Phone" placeholder="# # #- # # # -# # # #">
              </div>
@@ -38,7 +40,7 @@
         <br><br>
 
         <div class="PatientDOB form-row">
-            <label for="DOB" class="PatientDOBllb">Date Of Birth</label>
+            <label for="DOB" class="PatientDOBllb">Date Of Birth*</label>
             <div class="input-group">
                 <input type="date" id="DOB" class="dateofbirth" name="Date Of Birth">
             </div>
@@ -59,7 +61,7 @@
         <br><br>
 
         <div class="PatientAddress form-row">
-            <label for="PAddress" class="PatientAddresslbl">Patient's Address </label>
+            <label for="PAddress" class="PatientAddresslbl">Patient's Address* </label>
             <div class="input-group address-fields">
             <input type="text" class="street_address" id="PAddress" name="Street Address" placeholder="Street Address"><br><br>
             <input type="text" class="city_address" id="PAddress" name="City" placeholder="City">
@@ -82,7 +84,7 @@
         </div>
 
         <div class="PatientInsurence form-row">
-            <label for="InsuranceName" class="PatientInsurencellb">Insurance Name</label>
+            <label for="InsuranceName" class="PatientInsurencellb">Insurance Name*</label>
             <div class="input-group">
                 <input type="text" id="Iname" class="Insurance" name="PatientInsurence"><br><br>
             </div>

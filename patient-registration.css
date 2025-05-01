@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 body {
   background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287');
   background-color: rgb(234, 245, 247);
@@ -5,12 +6,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Raleway';
 }
 
 form {
   background-color: rgb(255, 255, 255);
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Raleway';
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -71,7 +73,7 @@ input[type='radio']:checked{
     border-width: 1px !important;
     border-style: solid !important;
     border-radius: 6px !important;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
@@ -142,10 +144,11 @@ input[type='radio']:checked{
   text-align: left;
 }
 
-
 .PatientMedicalHistory input[type="checkbox"] {
   accent-color: #030303; 
 }
+
+
 
 
 
