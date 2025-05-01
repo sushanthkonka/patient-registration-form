@@ -3,7 +3,7 @@
 <head>
     <title>Patient Registration Form</title>
     <link rel="stylesheet" href="patient-registration.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -23,8 +23,12 @@
         <div class="Gender form-row">
             <label for="Gender" class="Genderllb">Gender</label>
             <div class="input-group">
-                <input type="radio" name="gender" id="male" value="male"><label for="Male">Male</label>
-                <input type="radio" name="gender" id="female" value="female"><label for="Female">Female</label>
+                <div class="Radio-Button">
+                    <input type="radio" name="gender" id="male" value="male"><label for="Male">Male</label>
+                </div>
+                <div class="Radio-Button">
+                    <input type="radio" name="gender" id="female" value="female"><label for="Female">Female</label>
+                </div>
             </div>
         </div>
 
@@ -51,11 +55,23 @@
         <div class="PatientMstatus form-row">
             <label for="MStatus" class="PatientMstatusllb">Marital Status</label>
             <div class="input-group">
-                <input type="radio" class="single_Status" name="MStatus" id="Single" value="Single"><label for="Single">Single</label>
-                <input type="radio" class="maried_status" name="MStatus" id="Married" value="Married"><label for="Married">Married</label>
-                <input type="radio"  class="divorced_status" name="MStatus" id="Divorced" value="Divorced"><label for="Divorced">Divorced</label>
-                <input type="radio"  class= "Widow_status" name="MStatus" id="Widow" value="Widow"><label for="Widow">Widow</label>
-        </div>
+                <div class="Radio-Button">
+                    <input type="radio" class="single_Status" name="MStatus" id="Single" value="Single"><label
+                        for="Single">Single</label>
+                </div>
+                <div class="Radio-Button">
+                    <input type="radio" class="maried_status" name="MStatus" id="Married" value="Married"><label
+                        for="Married">Married</label>
+                </div>
+                <div class="Radio-Button">
+                    <input type="radio" class="divorced_status" name="MStatus" id="Divorced" value="Divorced"><label
+                        for="Divorced">Divorced</label>
+                </div>
+                <div class="Radio-Button">
+                    <input type="radio" class="Widow_status" name="MStatus" id="Widow" value="Widow"><label
+                        for="Widow">Widow</label>
+                </div>
+            </div>
         </div>
 
         <br><br>
@@ -91,24 +107,51 @@
         </div>
 
         <div class="PatientMedicalHistory form-row">
-            <label for="Past medical history" class="PatientMedicalHistoryllb">Past medical history:</label><br><br>
-            <div class="input-group check-box"> 
-            <input type="checkbox" id="Anemia" name="medical_history" value="Anemia"><label for="Anemia"> Anemia</label><br>
-            <input type="checkbox" id="Asthma" name="medical_history" value="Asthma"><label for="Asthma"> Asthma</label><br>
-            <input type="checkbox" id="Bronchitis" name="medical_history" value="Bronchitis"><label for="Bronchitis"> Bronchitis</label><br>
-            <input type="checkbox" id="Chickenpox" name="medical_history" value="Chickenpox"><label for="Chickenpox"> Chickenpox</label><br>
-            <input type="checkbox" id="Diabetes" name="medical_history" value="Diabetes"><label for="Diabetes"> Diabetes</label><br>
-            <input type="checkbox" id="Pneumonia" name="medical_history" value="Pneumonia"><label for="Pneumonia"> Pneumonia</label><br>
-            <input type="checkbox" id="Thyroid" name="medical_history" value="Thyroid Disease"><label for="Thyroid"> Thyroid Disease</label><br>
-            <input type="checkbox" id="Ulcer" name="medical_history" value="Ulcer"><label for="Ulcer"> Ulcer</label><br>
-            <input type="checkbox" id="Other" name="medical_history" value="Other"><label for="Other"> Other</label><br><br>
-        </div>
+            <label for="Past medical history" class="PatientMedicalHistoryllb">Past medical history*</label><br><br>
+            <div class="input-group check-box">
+                <div class="medical-history">
+                    <input type="checkbox" id="Anemia" name="medical_history" value="Anemia"><label for="Anemia">
+                        Anemia</label><br>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Asthma" name="medical_history" value="Asthma"><label for="Asthma">
+                        Asthma</label><br>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Bronchitis" name="medical_history" value="Bronchitis"><label for="Bronchitis">
+                        Bronchitis</label><br>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Chickenpox" name="medical_history" value="Chickenpox"><label for="Chickenpox">
+                        Chickenpox</label>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Diabetes" name="medical_history" value="Diabetes"><label for="Diabetes">
+                        Diabetes</label>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Pneumonia" name="medical_history" value="Pneumonia"><label for="Pneumonia">
+                        Pneumonia</label>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Thyroid" name="medical_history" value="Thyroid Disease"><label for="Thyroid">
+                        Thyroid Disease</label>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Ulcer" name="medical_history" value="Ulcer"><label for="Ulcer"> Ulcer</label>
+                </div>
+                <div class="medical-history">
+                    <input type="checkbox" id="Other" name="medical_history" value="Other"><label for="Other"> Other</label>
+                </div>
+            </div>
         </div>
 
         <h1>Patient/Guardian Signature</h1>
         <p>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.</p>
 
-        <button type="button" class="button" onclick="alert('You are Successfully REGISTERED')">REGISTER</button>
+        <div class="Register-Button">
+            <button type="button" class="button" onclick="alert('You are Successfully REGISTERED')">REGISTER</button>
+        </div>
     </form>
 </body>
 </html>
