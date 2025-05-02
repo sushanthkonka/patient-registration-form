@@ -40,7 +40,18 @@ form {
   border: none;
   outline: none;
   font-size: 18px;
+  
 }
+
+.dateofbirth {
+  width: 300px; 
+  text-transform: uppercase;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 
 
 
@@ -63,7 +74,6 @@ form {
     border-width: 1px !important;
     border-style: solid !important;
     border-radius: 6px !important;
-    font-family: 'Raleway';
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
@@ -71,6 +81,9 @@ form {
     background-color: rgba(0, 0, 0, .15);
     border-color: transparent;
 }
+
+
+
 .form-row {
   display: flex;
   justify-content: space-between;
@@ -83,6 +96,7 @@ form {
   text-align: left;
   font-weight: bold;
 }
+
 
 .input-group {
   display: flex;
@@ -158,10 +172,24 @@ form {
 }
 
 
+.PatientMedicalHistory {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.medical-history-label {
+  min-width: 150px;
+  font-weight: bold;
+  margin-top: 12px; 
+}
+
 .medical-history{
-  display: list-item;
   line-height: 2.5;
 }
+
+
 
 
 .Radio-Button {
@@ -172,6 +200,8 @@ form {
   vertical-align: middle;
   position: relative;
 }
+
+
 
 .Radio-Button input[type="radio"] {
   cursor: pointer;
@@ -185,7 +215,7 @@ form {
 
 .Radio-Button label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
   cursor: pointer;
   user-select: none;
   line-height: 20px;

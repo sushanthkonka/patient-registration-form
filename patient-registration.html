@@ -15,8 +15,8 @@
         <div class="PatientName form-row">
             <label for="fname" class="PatientNamellb" >Patient's Name*</label>
             <div class="input-group">
-            <input type="text" class="firstname" id="fname" name="first" placeholder="First Name" >
-            <input type="text" class="lastname" id="lname" name="last" placeholder="Last Name" >
+            <input type="text" class="firstname" id="fname" name="first" placeholder="First" >
+            <input type="text" class="lastname" id="lname" name="last" placeholder="Last" >
         </div>
         </div>
 
@@ -37,7 +37,7 @@
         <div class="PatientPhone form-row">
             <label for="Phone" class="Phonellb">Phone*</label>
             <div class="input-group">
-                 <input type="tel" id="Phone" class="phonenumber" name="Phone" placeholder="# # #- # # # -# # # #">
+                 <input type="tel" id="Phone" class="phonenumber" name="Phone" placeholder="# # #  # # #  # # # #">
              </div>
         </div>
 
@@ -46,14 +46,14 @@
         <div class="PatientDOB form-row">
             <label for="DOB" class="PatientDOBllb">Date Of Birth*</label>
             <div class="input-group">
-                <input type="date" id="DOB" class="dateofbirth" name="Date Of Birth">
+                <input type="date" id="DOB" class="dateofbirth" name="Date Of Birth" placeholder="MM/DD/YYYY">
             </div>
         </div>
 
         <br><br>
 
         <div class="PatientMstatus form-row">
-            <label for="MStatus" class="PatientMstatusllb">Marital Status</label>
+            <label for="MStatus" class="PatientMstatusllb">Marital Status*</label>
             <div class="input-group">
                 <div class="Radio-Button">
                     <input type="radio" class="single_Status" name="MStatus" id="Single" value="Single"><label
@@ -107,7 +107,9 @@
         </div>
 
         <div class="PatientMedicalHistory form-row">
-            <label for="Past medical history" class="PatientMedicalHistoryllb">Past medical history*</label><br><br>
+            <div class="medical-history-label">
+                <label for="Past medical history" class="PatientMedicalHistoryllb">Past medical history*</label><br><br>
+            </div>
             <div class="input-group check-box">
                 <div class="medical-history">
                     <input type="checkbox" id="Anemia" name="medical_history" value="Anemia"><label for="Anemia">
@@ -141,12 +143,12 @@
                     <input type="checkbox" id="Ulcer" name="medical_history" value="Ulcer"><label for="Ulcer"> Ulcer</label>
                 </div>
                 <div class="medical-history">
-                    <input type="checkbox" id="Other" name="medical_history" value="Other"><label for="Other"> Other</label>
+                    <input type="checkbox" id="Other" name="medical_history" value="Other"><label for="Other"> Other :</label>
                 </div>
             </div>
         </div>
 
-        <h1>Patient/Guardian Signature</h1>
+        <h4>Patient/Guardian Signature</h4>
         <p>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.</p>
 
         <div class="Register-Button">
