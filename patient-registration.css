@@ -23,6 +23,7 @@ form {
   gap: 10px;
   align-items: center;
   display: inline-block;
+  margin-right: 8px;
 }
 
 
@@ -43,33 +44,89 @@ form {
   
 }
 
-.dateofbirth {
-  width: 300px; 
-  text-transform: uppercase;
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-
 
 
 
 #fname,
 #lname,
-#male,
-#female,
-#Phone,
-#DOB,
-#Single,
-#Married,
-#Divorced,
-#Widow,
 #PAddress,
-#Iname,
 #country {
     color: #070606;
+    padding: 15px 15px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 6px !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: rgba(0, 0, 0, .15);
+    border-color: transparent;
+}
+.half-width {
+  width: 50%;
+}
+
+
+.phonenumber {
+  width: 100%;
+  color: #070606;
+  padding: 15px 15px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 6px !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  background-color: rgba(0, 0, 0, .15);
+  border-color: transparent;
+}
+
+.dateofbirth {
+  width: 100%;
+  color: #070606;
+  padding: 15px 15px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 6px !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  background-color: rgba(0, 0, 0, .15);
+  border-color: transparent;
+  font-weight: normal;
+}
+
+input[type="date"].dateofbirth::-webkit-datetime-edit {
+  text-transform: uppercase;
+}
+
+
+.Insurance{
+  width: 100%;
+  color: #070606;
+  padding: 15px 15px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 6px !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  background-color: rgba(0, 0, 0, .15);
+  border-color: transparent;
+}
+
+
+
+
+#PAddress_City,
+#PAddress_State,
+#PAddress_zip{
+   display: inline;
+   color: #070606;
     padding: 15px 15px;
     border-width: 1px !important;
     border-style: solid !important;
@@ -100,7 +157,7 @@ form {
 
 .input-group {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 10px;
   width: 70%;
 }
@@ -172,14 +229,15 @@ form {
 }
 
 
-.PatientMedicalHistory {
+.PatientMedicalHistory{
   display: flex;
   align-items: flex-start;
   gap: 30px;
   margin-bottom: 20px;
+  
 }
 
-.medical-history-label {
+.medical-history-label{
   min-width: 150px;
   font-weight: bold;
   margin-top: 12px; 
@@ -189,16 +247,63 @@ form {
   line-height: 2.5;
 }
 
+.PatientAddress {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  
+}
+
+.PatientAddress-label {
+  width: 30%;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: left;
+  align-self: flex-start;
+  padding-top: 10px; 
+}
 
 
+.input-group.address-fields {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box; 
+  padding-right: 0;
+
+}
+
+.address-field-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+
+
+.street_address {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.city_address,
+.state_addresss,
+.zip_address,
+.Country_dropdown {
+  width: 48%;
+ 
+}
 
 .Radio-Button {
-  display: inline-block;
-  padding: 8px;
-  width: 70%;
-  text-align: left;
-  vertical-align: middle;
-  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px; 
+  width: auto;        
+  padding: 6px;
 }
 
 
@@ -211,14 +316,16 @@ form {
   width: 20px;
   margin: 0;
   z-index: 2;
+  gap:6;
 }
 
 .Radio-Button label {
   position: relative;
-  padding-left: 30px;
+  padding-left: 26px;
   cursor: pointer;
   user-select: none;
   line-height: 20px;
+  margin-right: 10px;
 }
 
 .Radio-Button label::before {

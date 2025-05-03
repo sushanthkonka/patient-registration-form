@@ -37,8 +37,10 @@
         <div class="PatientPhone form-row">
             <label for="Phone" class="Phonellb">Phone*</label>
             <div class="input-group">
-                 <input type="tel" id="Phone" class="phonenumber" name="Phone" placeholder="# # #  # # #  # # # #">
-             </div>
+                <div class="half-width">
+                <input type="tel" id="Phone" class="phonenumber" name="Phone" placeholder="# # #  # # #  # # # #">
+            </div>
+        </div>
         </div>
 
         <br><br>
@@ -46,7 +48,9 @@
         <div class="PatientDOB form-row">
             <label for="DOB" class="PatientDOBllb">Date Of Birth*</label>
             <div class="input-group">
-                <input type="date" id="DOB" class="dateofbirth" name="Date Of Birth" placeholder="MM/DD/YYYY">
+                <div class="half-width">
+                    <input type="date" id="DOB" class="dateofbirth" name="Date Of Birth" placeholder="MM/DD/YYYY">
+                </div>
             </div>
         </div>
 
@@ -77,32 +81,44 @@
         <br><br>
 
         <div class="PatientAddress form-row">
-            <label for="PAddress" class="PatientAddresslbl">Patient's Address* </label>
+            <div class="PatientAddress-label">
+                <label for="PAddress" class="PatientAddresslbl">Patient's Address* </label>
+            </div>
             <div class="input-group address-fields">
-            <input type="text" class="street_address" id="PAddress" name="Street Address" placeholder="Street Address"><br><br>
-            <input type="text" class="city_address" id="PAddress" name="City" placeholder="City">
-            <input type="text" class="state_addresss" id="PAddress" name="State" placeholder="State"><br><br>
-            <input type="text" class="zip_address" id="PAddress" name="Zip" placeholder="Postal/Zip Code">
-            <select id="country" class="Country_dropdown" name="country">
-                <option value="">Country</option>
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-                <option value="uk">United Kingdom</option>
-                <option value="au">Australia</option>
-                <option value="in">India</option>
-                <option value="de">Germany</option>
-                <option value="fr">France</option>
-                <option value="jp">Japan</option>
-                <option value="cn">China</option>
-            </select>
-        </div>
-            <br><br>
+                <div class="address-field-input">
+                    <input type="text" class="street_address" id="PAddress" name="Street Address"
+                        placeholder="Street Address"><br><br>
+                </div>
+                <div class="address-field-input">
+                        <input type="text" class="city_address" id="PAddress_City" name="City" placeholder="City">
+                        <input type="text" class="state_addresss" id="PAddress_State" name="State" placeholder="State"><br><br>
+                    </div>
+                </div>
+                <div class="address-field-input">
+                        <input type="text" class="zip_address" id="PAddress_zip" name="Zip" placeholder="Postal/Zip Code">
+                        <div class="address-field-input">
+                        <select id="country" class="Country_dropdown" name="country">
+                            <option value="">Country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="in">India</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="jp">Japan</option>
+                            <option value="cn">China</option>
+                        </select>
+                </div>
+            </div>
         </div>
 
         <div class="PatientInsurence form-row">
             <label for="InsuranceName" class="PatientInsurencellb">Insurance Name*</label>
             <div class="input-group">
-                <input type="text" id="Iname" class="Insurance" name="PatientInsurence"><br><br>
+                <div class="half-width">
+                    <input type="text" id="Iname" class="Insurance" name="PatientInsurence"><br><br>
+                </div>
             </div>
         </div>
 
@@ -148,7 +164,7 @@
             </div>
         </div>
 
-        <h4>Patient/Guardian Signature</h4>
+        <h4>Patient/Guardian Signature*</h4>
         <p>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.</p>
 
         <div class="Register-Button">
