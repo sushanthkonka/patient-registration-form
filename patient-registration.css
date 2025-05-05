@@ -64,7 +64,7 @@ form {
     border-color: transparent;
 }
 .half-width {
-  width: 50%;
+  width: 280px;
 }
 
 
@@ -101,11 +101,12 @@ form {
 
 input[type="date"].dateofbirth::-webkit-datetime-edit {
   text-transform: uppercase;
+  
 }
 
 
 .Insurance{
-  width: 100%;
+  width: 280px;
   color: #070606;
   padding: 15px 15px;
   border-width: 1px !important;
@@ -269,7 +270,7 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  width: 464px;
+  width: 100%;
 }
 
 
@@ -280,7 +281,7 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  width: 208px;
+  width: 308px;
 }
 
 
@@ -349,6 +350,11 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
   cursor: pointer;
   display: block;             
   margin: 0 auto;            
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
 }
 
 
