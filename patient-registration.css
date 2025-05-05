@@ -41,7 +41,6 @@ form {
   border: none;
   outline: none;
   font-size: 18px;
-  
 }
 
 
@@ -100,9 +99,11 @@ form {
 }
 
 input[type="date"].dateofbirth::-webkit-datetime-edit {
+  font-weight: 400; 
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  
 }
+
 
 
 .Insurance{
@@ -282,6 +283,11 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
   position: relative;
   box-sizing: border-box;
   width: 308px;
+}
+
+.Country_dropdown {
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
 }
 
 
