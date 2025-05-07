@@ -63,12 +63,12 @@ form {
     border-color: transparent;
 }
 .half-width {
-  width: 280px;
+  width: 380px;
 }
 
 
 .phonenumber {
-  width: 100%;
+  width: 117%;
   color: #070606;
   padding: 15px 15px;
   border-width: 1px !important;
@@ -83,7 +83,7 @@ form {
 }
 
 .dateofbirth {
-  width: 100%;
+  width: 117%;
   color: #070606;
   padding: 15px 15px;
   border-width: 1px !important;
@@ -107,7 +107,7 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
 
 
 .Insurance{
-  width: 280px;
+  width: 117%;
   color: #070606;
   padding: 15px 15px;
   border-width: 1px !important;
@@ -183,7 +183,7 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
 .input-group.check-box {
   
   display: inline-block;
-  padding: 8px;
+  padding: 2px;
   text-overflow: ellipsis;
   width: 70%;
   text-align: left;
@@ -230,7 +230,7 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   
 }
 
@@ -241,7 +241,7 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
 }
 
 .medical-history{
-  line-height: 2.5;
+  line-height: 3.5;
 }
 
 
@@ -282,12 +282,13 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  width: 308px;
+  width: calc(50% - 3px);
 }
 
 .Country_dropdown {
   font-weight: normal;
   font-family: 'Raleway', sans-serif;
+  width: 282%;
 }
 
 
@@ -348,7 +349,7 @@ input[type="date"].dateofbirth::-webkit-datetime-edit {
   background-color: #000;      
   color: #fff;                
   padding: 10px 50px;
-  width: 600px;                
+  width: 100%;                
   max-width: 100%;             
   border: none;
   border-radius: 5px;
